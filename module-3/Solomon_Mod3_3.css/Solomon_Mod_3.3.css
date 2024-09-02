@@ -1,0 +1,44 @@
+/* Center the H1 title on the page */
+h1 {
+    text-align: center;
+}
+
+/* Set the weight of the H3 tags to 500 */
+h3 {
+    font-weight: 500;
+}
+
+/* Set the weight of the ordered and unordered list items to 300 */
+ol, ul {
+    font-weight: 300;
+}
+
+/* Styling for the ordered list (Top 10 Favorite Books) */
+ol {
+    list-style-position: inside;  /* Ensures the numbers are inside the border */
+    padding: 10px;                /* Padding inside the border */
+    border: 1px solid red;        /* 1px solid red border */
+    border-radius: 15px;          /* 15px border-radius */
+}
+
+/* Styling for the unordered list (5 Things I've Learned) */
+ul {
+    list-style-type: upper-roman; /* Change bullet points to upper-roman numerals */
+    list-style-position: inside;  /* Ensures the numerals are inside the border */
+    padding: 10px;                /* Padding inside the border */
+    border: 1px dashed red;       /* 1px dashed red border */
+    border-radius: 15px;          /* 15px border-radius */
+}
+
+/* Styling for the bottom div (link back to the landing page) */
+div:last-of-type {
+    width: 100%;                /* Set the width of the last div to 100% */
+    margin-top: 60%;            /* Margin at the top to create space between the lists and the link */
+    float: right;               /* Float the link to the right */
+    margin-bottom: 20px;        /* Add a margin at the bottom */
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline; /* Show underline when hovering over links */
+}
