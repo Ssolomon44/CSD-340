@@ -1,0 +1,89 @@
+/* Header Styles */
+header {
+    background-color: #007BFF; /* Electric Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Increased font size */
+    font-weight: 700; /* Bolder font */
+}
+
+/* Navbar Styles */
+#navbar {
+    overflow: hidden;
+    background-color: #40E0D0; /* Turquoise Green */
+    border-bottom: 15px solid #33C4B3; /* Darker shade of Turquoise */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold; /* Bold text for navigation links */
+}
+
+#navbar a:hover {
+    background-color: #33C4B3; /* Darker Turquoise Green for hover effect */
+    color: #32CD32; /* Lime Green for hover text */
+}
+
+/* Container and Card Styles */
+#container {
+    margin: 2% 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    margin: auto;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #40E0D0; /* Turquoise Green */
+    font-weight: 700; /* Bold text */
+}
+
+.card-content {
+    padding: 2px 16px;
+    font-size: 1.1em; /* Slightly larger font size */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007BFF; /* Same Electric Blue as the header */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #40E0D0; /* Turquoise Green */
+    font-weight: 400;
+    text-align: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    color: #40E0D0; /* Turquoise Green */
+    text-decoration: none;
+    font-weight: bold; /* Bold text for footer links */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
