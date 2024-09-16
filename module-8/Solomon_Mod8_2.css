@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Basic font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F4F6; /*  Background color */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #B7410E; /* Dark orange color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Font size */
+    font-weight: 700; /* Bold font */
+    margin: 0;
+}
+
+/* Navbar Styles */
+#navbar {
+    overflow: hidden;
+    background-color: #D2B48C; /* Light beige color */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    background-color: #A0522D; /* Darker brown for hover effect */
+}
+
+/* Container and Card Styles */
+#container {
+    margin: 2% 5% 100px 5%; /* Shorthand for top, right, bottom, left margins */
+    padding: 10px;
+}
+
+.card {
+    background-color: white; /* White background for cards */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    transition: 0.3s;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #B7410E; /* Dark orange color */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    padding: 10px;
+    font-size: 1.1em; /* Slightly larger font size */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Movies Table Styles */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding: 12px;
+    text-align: left;
+    background-color: #B7410E; /* Dark orange for table header */
+    color: white;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #B7410E; /* Same dark orange color as header */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
