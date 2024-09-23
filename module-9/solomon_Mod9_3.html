@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 9.3">
+    <meta name="author" content="Shayna Solomon">
+    <meta name="keywords" content="HTML, CSS, Assignment, JavaScript">
+    <link rel="stylesheet" href="Solomon_Mod2_2.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <!-- Declare JavaScript variables for missing words -->
+    <script>
+        var word1 = "children";
+        var word2 = "achievements";
+        var word3 = "support";
+        var word4 = "Miami";
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 9.3 – JavaScript - Part 1</h1>
+        <h2>Using JavaScript to Interact with HTML</h2>
+        
+        <p class="intro">
+            My name is Shayna. I am from <span id="location">________</span>. I have moved around the country quite a lot, but there is no place like home, and that is where I currently live.
+        </p>
+        
+        <p>
+            I have two boys, named Noah and Asher who are my whole life. My <span id="family">________</span> are my greatest joy.
+        </p>
+        
+        <p>
+            My children are my greatest <span id="achievements">________</span>; however, I want to show them that even though I am not 18, I can still pursue and accomplish my goals by earning a degree.
+        </p>
+        
+        <p>
+            I am thankful to God and my children for their <span id="support">________</span>, and I believe that by achieving my dreams, I am setting an example of perseverance and dedication.
+        </p>
+        
+        <hr />
+        
+        <!-- JavaScript buttons to replace blanks with correct words -->
+        <p>
+            <button type="button" onclick="document.getElementById('location').innerHTML = word4;">Miami</button>
+            <button type="button" onclick="document.getElementById('family').innerHTML = word1;">children</button>
+            <button type="button" onclick="document.getElementById('achievements').innerHTML = word2;">achievements</button>
+            <button type="button" onclick="document.getElementById('support').innerHTML = word3;">support</button>
+        </p>
+        
+        <address>
+            <p><a href="https://www.bellevue.edu">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+</body>
+</html>
