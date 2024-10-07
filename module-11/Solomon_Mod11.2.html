@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input, button {
+            margin: 5px;
+            padding: 10px;
+        }
+        #listDisplay {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+            padding: 10px;
+            min-width: 300px;
+        }
+        #instructions {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        .input-buttons-container {
+            display: inline-flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p id="instructions">This is an interactive To Do List. Type in your first item in the text box, then click Add. Click the Display button to see current items in the list. Click on Delete Last Entry if you'd like to remove the last entry.</p>
+
+    <div class="input-buttons-container">
+        <input type="text" id="itemInput" placeholder="Enter task...">
+        <button onclick="addItem()">Add</button>
+        <button onclick="deleteLastItem()">Delete Last Entry</button>
+        <button onclick="displayList()">Display</button>
+    </div>
+
+    <hr>
+
+    <div id="listDisplay"></div> <!-- This is where the list will be displayed -->
+
+    <script>
+        let todoList = [];
+
+        function addItem() {
+            const item = document.getElementById("itemInput").value; 
+            if (item) {
+                todoList.push(item);
+                alert("Item: " + item + " Added at index " + todoList.length);
+                document.getElementById("itemInput").value = "";
+            } else {
+                alert("Please enter a task before adding."); 
+            }
+        }
+
+        function deleteLastItem() {
+            if (todoList.length > 0) {
+                const removedItem = todoList.pop(); 
+                alert("Removed: '" + removedItem + "'"); 
+            } else {
+                alert("No items to delete."); 
+            }
+        }
+
+        function displayList() {
+          const displayArea = document.getElementById("listDisplay");
+          displayArea.innerHTML = "";
+
+          if (todoList.length === 0) {
+             displayArea.innerHTML = "The list is empty."; 
+          } else {
+             todoList.forEach((item, index) => {
+                displayArea.innerHTML += "<p>Item " + (index + 1) + " = " + item + "</p>"; 
+             });
+          }
+        }
+    </script>
+</body>
+</html>
