@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, sans-serif;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        h1,h2 {
+            color: #259fcf;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        #sunset1:hover {
+            filter: grayscale(100%) brightness(0.5); /* Grayscale + dim */
+        }
+
+        #sunset2:hover {
+            filter: grayscale(100%) brightness(0.5); /* Grayscale + dim */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSD 340 Web Development with HTML and CSS</h1>
+
+    <h2>Assignment 10.3: JavaScript - Part 2</h2>
+    <p>Hover over the sunset images to see the filter effect. </p>
+
+    <!-- First sunset image with filter effect on hover and onclick event -->
+    <img src="Sunset.jpg" alt="Sunset 1" id="sunset1" onclick="imageClicked('Sunset 1')">
+
+    <!-- Second sunset image with different filter effect on hover and onclick event -->
+    <img src="Sunset 2.jpg" alt="Sunset 2" id="sunset2" onclick="imageClicked('Sunset 2')">
+
+    <script>
+        function imageClicked(imageName) {
+            alert(imageName + ' was clicked!');
+        }
+    </script>
+</body>
+</html>
